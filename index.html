@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Game That Watches You</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="ui-layer">
+        <h1 id="level-title">Level 1</h1>
+        <p id="message">Escape the complex. Do not stand still.</p>
+    </div>
+
+    <div id="start-screen">
+        <h1 class="start-title">The Game That Watches You</h1>
+        <p class="start-prompt">Press SPACE to Start</p>
+    </div>
+
+    <canvas id="gameCanvas"></canvas>
+
+    <div id="reveal-screen" class="hidden">
+        <h1 id="reveal-title" style="color: #333;">The Game Watched You.</h1>
+        <h2 id="reveal-trait" style="color: #111;">Trait</h2>
+        <p id="reveal-description" style="color: #555;">Description</p>
+        <button id="restart-btn" onclick="location.reload()">Play Again</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
